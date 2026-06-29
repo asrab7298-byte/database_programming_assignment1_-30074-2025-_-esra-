@@ -11,3 +11,25 @@ Without a structured database system, the hospital may experience:
 •	Limited visibility into financial performance 
 •	Inefficient reporting and decision-making processes 
 Therefore, a relational database system is required to organize hospital data and enable advanced SQL analysis using CTEs and Window Functions for better operational and financial insights
+ Database Schema
+The hospital management system consists of three related relational tables designed to store and manage hospital operations efficiently.
+________________________________________
+🔹 1. Patients Table
+Stores information about patients visiting the hospital.
+Attributes:
+•	patient_id (Primary Key): Unique identifier for each patient 
+•	patient_name: Name of the patient 
+•	gender: Gender of the patient 
+•	age: Age of the patient 
+________________________________________
+🔹 2. Doctors Table
+Stores information about doctors working in the hospital.
+Attributes:
+•	doctor_id (Primary Key): Unique identifier for each doctor 
+•	doctor_name: Name of the doctor 
+•	specialization: Medical field of the doctor 
+________________________________________
+🔹 3. Appointments Table
+Stores appointment records between patients and doctors.
+Attributes:
+

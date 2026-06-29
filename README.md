@@ -75,3 +75,23 @@ specialization
 * One Patient can have many Appointments (1:M)
 * One Doctor can have many Appointments (1:M)
 * Each Appointment is linked to one Patient and one Doctor
+
+  **Three Levels of Analysis**
+
+**Descriptive Analysis** focuses on understanding **what happened**. It summarizes historical data using tables, reports, averages, percentages, and trends to provide a clear overview of the current situation.
+
+**Diagnostic Analysis** focuses on understanding **why it happened**. It examines patterns, relationships, and underlying factors within the data to identify the causes of specific outcomes or performance results.
+
+**Prescriptive Analysis** focuses on determining **what should be done**. Based on the findings from descriptive and diagnostic analysis, it provides recommendations, strategies, and actionable solutions to improve future performance and support better decision-making.
+
+Business Value:
+	The Simple CTE is used to temporarily filter high-value appointment records (fee > 100).
+This helps hospital management quickly identify profitable appointments without modifying the original dataset.
+It improves readability and simplifies query structure, making it easier to analyze important financial transactions.
+	Multiple CTEs allow step-by-step analytical processing.
+First, the system calculates the average appointment fee per patient, and then filters high-value patients.
+This helps management identify patients who generate consistently high revenue, which can support decision-making in resource allocation and VIP service planning.
+	The Recursive CTE is used to generate sequential data programmatically.
+In a real hospital scenario, it can be applied to:
+
+

@@ -33,3 +33,45 @@ ________________________________________
 Stores appointment records between patients and doctors.
 Attributes:
 
+# ER Diagram – Hospital Management System
+
+```text
+PATIENTS
+---------
+patient_id (PK)
+patient_name
+gender
+age
+
+    1
+    |
+    | has
+    |
+    M
+
+APPOINTMENTS
+--------------
+appointment_id (PK)
+patient_id (FK)
+doctor_id (FK)
+appointment_date
+fee
+
+    M
+    |
+    | assigned to
+    |
+    1
+
+DOCTORS
+--------
+doctor_id (PK)
+doctor_name
+specialization
+```
+
+### Relationship Summary
+
+* One Patient can have many Appointments (1:M)
+* One Doctor can have many Appointments (1:M)
+* Each Appointment is linked to one Patient and one Doctor
